@@ -9,8 +9,7 @@ state = {
 	randomImg: ""
 };
 
-// componentDidMount() method to fetch
-// images from the API
+// componentDidMount() method to fetch images from the API
 componentDidMount() {
 	
 	// Fetching data from the API
@@ -56,7 +55,6 @@ render() {
 									height: "25px",
 									width: "15em",
 									fontSize: "15px"}}
-	   	// className="meme_text1"
 			placeholder="Enter Text"
 			type="text"
 			value={this.state.topText}
@@ -67,7 +65,6 @@ render() {
 									height: "25px",
 									width: "15em",
 									fontSize: "15px"}}
-		  // className="meme_text2"
 			placeholder="Enter Text"
 			type="text"
 			value={this.state.bottomText}
@@ -78,7 +75,6 @@ render() {
 
 		<br />
 		<div className="meme">
-		{/* // Only show the below elements when the image is ready to be displayed */}
 		{this.state.randomImg === "" ? "" :
 			<img src={this.state.randomImg} alt="meme" />}
 		{this.state.randomImg === "" ? "" :
